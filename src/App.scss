@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.form {
+  border-radius: 0.3rem;
+  background-color: lightgray;
+  min-width: 20rem;
+  width: 40%;
+  padding: 1rem;
+  label {
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+  }
+  input {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.4rem 1rem;
+    border: 2px solid darkgray;
+    &:focus {
+      outline: none;
+      border: 2px solid lightseagreen;
+    }
+  }
+
+  button {
+    padding: 0.3rem 1rem;
+    width: 6rem;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:active {
+      filter: brightness(50%);
+    }
+  }
+}
+
+.timer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    font-weight: 900;
+    font-size: 3rem;
+    color: darkslategray;
+  }
+
+  button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-weight: 900;
+    color: white;
+    border: 2px solid darkblue;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.frame {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  white;
+  height: 100vh;
+
+  > div {
+    width: 40rem;
+    height: 30rem;
+    border: 45px solid burlywood;
+    box-shadow: 1px 1px  10px #000000cc;
+    background-color: burlywood;
+    border-radius: .5rem;
+
+    > img {
+      border-radius: .5rem;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
